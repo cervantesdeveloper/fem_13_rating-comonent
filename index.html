@@ -8,42 +8,84 @@
   
   <title>Frontend Mentor | Interactive rating component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <main>
+    <div class="card-rating">
+      <div class="card-rating__icon">
+        <img src="images/icon-star.svg" alt="">
+      </div>
+      <div class="card-rating__message">
+        <h1>How did we do?</h1>
+        <p>Please let us know how we did with your support request. All feedback is appreciated 
+          to help us improve our offering!</p>
+      </div>
+      <form action="">
+        
+        <div class="card-rating__rates">
+          <div class="card-rating__rate">
+            <input type="radio" name="rate" value="1" id="r1">
+            <label for="r1">1</label>
+          </div>
 
-  <!-- Rating state start -->
+          <div class="card-rating__rate">
+            <input type="radio" name="rate" value="2" id="r2">
+            <label for="r2">2</label>
+          </div>
 
-  How did we do?
+          <div class="card-rating__rate">
+            <input type="radio" name="rate" value="3" id="r3">
+            <label for="r3">3</label>
+          </div>
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+          <div class="card-rating__rate">
+            <input type="radio" name="rate" value="4" id="r4">
+            <label for="r4">4</label>
+          </div>
 
-  1 2 3 4 5
+          <div class="card-rating__rate">
+            <input type="radio" name="rate" value="5" id="r5">
+            <label for="r5">5</label>
+          </div>
+          
 
-  Submit
+          
 
-  <!-- Rating state end -->
+        </div>
 
-  <!-- Thank you state start -->
+      
+        <input type="submit" value="SUBMIT" class="btn cta">
+      </form>
+    </div>
 
-  You selected <!-- Add rating here --> out of 5
+    <div class="card-thanks">
+      <div class="card-thanks__hero">
+        <img src="images/illustration-thank-you.svg" alt="">
+      </div>
 
-  Thank you!
+      <div class="card-thanks__rate">
+        You selected 4 out of 5
+      </div>
 
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
+      <div class="card-thanks__message">
+        <h2>Thank you!</h2>
+        <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+          don’t hesitate to get in touch!</p>
+      </div>
+    </div>
 
-  <!-- Thank you state end -->
+
+  </main>
 
   
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="https://cervantesdeveloper.com">Cervantes Developer</a>.
+  </footer>
 </body>
 </html>

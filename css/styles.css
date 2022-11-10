@@ -1,0 +1,149 @@
+/* ***** Custom properties **** */
+
+:root{
+    /* ===colors === */
+    --background-site: rgb(20, 21, 25);
+    --background-card: rgb(33, 40,50);
+    --gray-dark: rgb(38, 47, 56);
+    --gray: rgb(124, 136, 152);
+    --white: #fff;
+    --cta: rgb(252, 118, 19);
+
+    /* ===== fonts ==== */
+    --font: 'Overpass', sans-serif;
+}
+
+/***** reset *****/
+html{
+    box-sizing: border-box;
+    font-family: var(--font);
+    font-size: 16px;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+/***** site styles *****/
+body{
+    background-color: var(--background-site);
+    padding: 0 1.5rem;
+}
+
+main{
+    min-height: calc(100vh - .875rem);
+}
+
+/***** utilities *****/
+.btn{
+    width: min(100%, 17.4375rem);
+    height: 2.875rem;
+    font-family: var(--font);
+    letter-spacing: .1875rem;
+    border-radius: 1.4375rem;
+    border: none;
+    cursor: pointer;
+}
+
+.cta{
+    background-color: var(--cta);
+    color: var(--white);
+    font-weight: 700;
+    transition: 
+        background-color .3s ease-in-out,
+        color .3s ease-in-out;
+}
+
+.cta:hover{
+    background-color: var(--white);
+    color: var(--cta);
+}
+
+/* === card rating === */
+
+.card-rating,
+.card-thanks{
+    padding: 1.5rem 1.5rem 2rem;
+    background-color: var(--background-card);
+    border-radius: 1rem;
+}
+.card-rating__icon{
+    margin-bottom: .625rem;
+}
+
+.card-rating__icon,
+.card-rating__rate{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--gray-dark);
+    border-radius: 50%;
+}
+
+
+.card-rating__message{
+    margin-bottom: 2.5rem;
+}
+
+.card-rating__message h1{
+    font-size: 1.5rem;
+    line-height: 2;
+    color: var(--white);
+}
+
+.card-rating__message p,
+.card-rating__rate{
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--gray);
+}
+
+.card-rating__rates{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.card-rating__rate{
+    position: relative;
+    transition: 
+        background-color .3s ease-in-out,
+        color .3s ease-in-out;
+}
+
+.card-rating__rate:hover{
+    background-color: var(--cta);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.card-rating__rate input[type="radio"]{
+    position: absolute;
+    z-index: -1;
+}
+
+.checked{
+    background-color: var(--gray);
+}
+
+
+
+/* ==== footer ==== */
+.attribution { 
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 11px; text-align: center; 
+    color: var(--gray)
+}
+.attribution a { 
+    color: var(--white);
+    text-decoration: none;
+}
