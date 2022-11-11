@@ -70,7 +70,8 @@ main{
 
 .card-rating{
     padding: 1.5rem 1.5rem 2rem;
-    background-color: var(--background-card);
+    background: radial-gradient(circle at top, rgb(45,52,62) 10%, var(--background-card) 45%);
+    background-position:top;
     border-radius: 1rem;
     max-width: 25.75rem;
 }
